@@ -1,0 +1,21 @@
+/* use https://www.sassmeister.com/ for css conversion */
+/* Base styling */
+$primary-color: #007bff;
+$primary-font-color: black;
+
+body {
+  background-color: #f4f4f4;
+}
+
+h1 {
+  color: $primary-font-color;
+}
+
+/* Additional styles */
+
+/* Animation for completed tasks */
+.task-done {
+    opacity: 0.3; /* Reduces opacity for completed tasks */
+    transition: opacity 0.3s ease-in-out;
+  }
+  
