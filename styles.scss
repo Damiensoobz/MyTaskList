@@ -18,4 +18,12 @@ h1 {
     opacity: 0.3; /* Reduces opacity for completed tasks */
     transition: opacity 0.3s ease-in-out;
   }
+
+/* Highlight effect for the "Remove Task" button on hover */
+.delete:hover {
+    background-color: #ff0000; /* Change the background color to red on hover */
+    color: #fff; /* Change the text color to white on hover */
+    transform: scale(1.05); /* Increase the button size by 5% on hover */
+    transition: all 0.1s ease-in-out; /* Add a smooth transition effect */
+  }
   
