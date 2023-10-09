@@ -1,45 +1,40 @@
-/* use https://www.sassmeister.com/ for css conversion */
 /* Base styling */
 body {
-    background-color: #f4f4f4;
-  }
-  
-  h1 {
-    color: black;
-  }
-  
-  /* Additional styles */
-  /* Animation for completed tasks */
-  .task-done {
-    opacity: 0.3;
-    /* Reduces opacity for completed tasks */
-    transition: opacity 0.3s ease-in-out;
-  }
-  
-  /* Highlight effect for the "Remove Task" button on hover */
-  .delete:hover {
-    background-color: #ff0000;
-    /* Change the background color to red on hover */
-    color: #fff;
-    /* Change the text color to white on hover */
-    transform: scale(1.05);
-    /* Increase the button size by 5% on hover */
-    transition: all 0.1s ease-in-out;
-    /* Add a smooth transition effect */
-  }
-  
-  /* Define the shrink animation */
-  @keyframes shrink {
+    background-color: #f4f4f4; /* Background color for the entire page */
+}
+
+h1 {
+    color: black; /* Text color for h1 headings */
+}
+
+/* Additional styles */
+
+/* Animation for completed tasks */
+.task-done {
+    opacity: 0.3; /* Reduce opacity for completed tasks */
+    transition: opacity 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+/* Highlight effect for the "Remove Task" button on hover */
+.delete:hover {
+    background-color: #ff0000; /* Change background color to red on hover */
+    color: #fff; /* Change text color to white on hover */
+    transform: scale(1.05); /* Increase button size by 5% on hover */
+    transition: all 0.1s ease-in-out; /* Add a smooth transition effect */
+}
+
+/* Define the shrink animation */
+@keyframes shrink {
     0% {
-      transform: scale(1);
+        transform: scale(1); /* Initial size and opacity */
     }
     100% {
-      transform: scale(0);
-      opacity: 0;
+        transform: scale(0); /* Shrink to 0 size and opacity */
+        opacity: 0;
     }
-  }
-  /* Apply the shrink animation to task items with the 'shrink-animation' class */
-  .shrink-animation {
-    animation: shrink 0.3s ease-in-out;
-    /* Use the 'shrink' animation with a 0.3s duration */
-  }
+}
+
+/* Apply the shrink animation to task items with the 'shrink-animation' class */
+.shrink-animation {
+    animation: shrink 0.3s ease-in-out; /* Use the 'shrink' animation with a 0.3s duration */
+}
